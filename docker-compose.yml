@@ -1,7 +1,7 @@
 version: '3.0'
 services:
-  mysql:
-    image: mysql:5.7
+  mysql_db:
+    image: mysql:8.0
     ports: ['3306:3306']
     environment:
       - MYSQL_ROOT_PASSWORD=root
@@ -12,9 +12,9 @@ services:
     build: ./docker/php
     ports: ['9000:9000']
     depends_on:
-      - mysql
+      - mysql_db
     links:
-      - mysql
+      - mysql_db
     volumes:
       - ./app/:/var/www/app:cached
     working_dir: /var/www/app
