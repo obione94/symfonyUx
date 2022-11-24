@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <h3>Chart</h3>
+
+    {#{{ render_chart(chart) }}#}
+    {# {{ render_chart(chart, {'data-controller': 'admin-chartjs'}) }} #}
+
+   {{ render_chart(chart, {
+        'data-controller': 'admin-chartjs',
+        'data-action': 'chartjs:connect->admin-chartjs#onChartConnect'
+    }) }}
+
+
+{% endblock %}
