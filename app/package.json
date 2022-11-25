@@ -11,9 +11,11 @@
         "@symfony/ux-swup": "file:vendor/symfony/ux-swup/Resources/assets",
         "@symfony/ux-turbo": "file:vendor/symfony/ux-turbo/Resources/assets",
         "@symfony/webpack-encore": "^1.0.0",
-        "bootstrap": "^5.0.2",
+        "bootstrap": "^5.2.3",
         "chart.js": "^2.9.4",
         "core-js": "^3.0.0",
+        "file-loader": "^6.0.0",
+        "jquery": "^3.6.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "regenerator-runtime": "^0.13.2",
@@ -31,6 +33,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.6",
         "whatwg-fetch": "^3.6.2"
     }
 }

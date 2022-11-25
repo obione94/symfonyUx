@@ -1,0 +1,118 @@
+<section class="section-padding" id="section_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12 text-left mb-4">
+                <h2>Consommation</h2>
+            </div>
+
+            <div class="col-lg-6 col-12" >
+                {{ render_chart(chart, {
+                    'data-controller': 'admin-chartjs',
+                    'data-action': 'chartjs:connect->admin-chartjs#onChartConnect'
+                    }) 
+                }}
+            </div>
+            <div class="col-lg-6 col-12">
+                {{ render_chart(chart, {
+                    'data-controller': 'admin-chartjs',
+                    'data-action': 'chartjs:connect->admin-chartjs#onChartConnect'
+                    }) 
+                }}
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center mb-4">
+                    <h2>Eco Geste</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class="custom-block-wrap">
+                        <img src="build/images/eteindre-lumiere.jpeg"
+                            class="custom-block-image img-fluid" alt="">
+
+                        <div class="custom-block">
+                            <div class="custom-block-body">
+                                <h5 class="mb-3">Eteindre vos Lumières</h5>
+
+                                <p>L’importance d’un geste tel que le fait d’éteindre la lumière en sortant d’une pièce est bien prouvée. Ce bon réflexe permettant d’éviter le gaspillage énergétique. Vous permettrez ainsi à d’autres consommateurs de recevoir de l’électricité comme il se doit.</p>
+
+                                <div class="progress mt-4">
+                                    <div class="progress-bar w-50" role="progressbar" aria-valuenow="50"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center my-2">
+                                    <p class="mb-0">
+                                        <strong>l’éclairage occupe:</strong>
+                                        12 % 
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://www.respondanet.com/eteindre-ou-laisser-allumer-la-lumiere-en-sortant-dune-piece-economie-energetique-et-financiere/" class="custom-btn btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                    <div class="custom-block-wrap">
+                        <img src="build/images/chauffage.jpeg"
+                            class="custom-block-image img-fluid" alt="">
+
+                        <div class="custom-block">
+                            <div class="custom-block-body">
+                                <h5 class="mb-3">Baissé le Chauffage</h5>
+
+                                <p>Inutile de pousser sa chaudière au-delà de 20°C pendant l’hiver, même s’il fait très froid dehors. Pour que chacun se sente bien, on considère que 19°C dans les pièces de vie et 17°C dans les chambres suffisent amplement. La nuit,le corps a besoin de se refroidir pour dormir… Et si le froid se fait sentir, mieux vaut ajouter une couverture et conserver les réglages habituels de la chaudière.</p>
+
+                                <div class="progress mt-4">
+                                    <div class="progress-bar w-25" role="progressbar" aria-valuenow="25"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center my-2">
+                                    <p class="mb-0">
+                                        <strong>Economiser :</strong>
+                                        jusqu'à 7% sur la facture
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://www.quelleenergie.fr/magazine/chauffage-economise-jusqua-7-pourcent" class="custom-btn btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="custom-block-wrap">
+                        <img src="build/images/heurecreuse.jpeg"
+                            class="custom-block-image img-fluid" alt="">
+
+                        <div class="custom-block">
+                            <div class="custom-block-body">
+                                <h5 class="mb-3">Des heures creuses pour payer moins</h5>
+
+                                <p>Un prix du kWh environ 25 % moins cher en heures creuses, soit pendant huit heures, en général entre 22 heures et 6 heures du matin ou entre 23 h 30 et 7 h 30.Si vous souhaitez diminuer encore plus la consommation électrique de votre machine à laver, vous pouvez par exemple dire stop au prélavage qui consomme jusqu'à 15 % d'électricité en plus. Pour des vêtements peu sales, choisissez un lavage à 30 °C au lieu de 60 °C
+                                </p>
+
+                                <div class="progress mt-4">
+                                    <div class="progress-bar w-100" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center my-2">
+                                    <p class="mb-0">
+                                        <strong>Economiser:</strong>
+                                        jusqu'à 25 % sur la facture
+                                    </p>
+                                </div>
+                            </div>
+
+                            <a href="https://www.happ-e.fr/actualites/comment-ca-marche/profiter-heures-creuses-pour-lavage-en-machine-economique" class="custom-btn btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

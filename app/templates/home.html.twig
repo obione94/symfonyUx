@@ -1,26 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Home{% endblock %}
+{% block title %}BlackoutAdvisor{% endblock %}
 
 {% block body %}
-    <h3>Home</h3>
-
-    <div data-controller="hello"></div>
-
-    <div data-controller="counter">
-        <div>
-            <span data-counter-target="count"></span>
-            <span data-counter-target="test"></span>
-        </div>
-    </div>
-    <br>
-    <div data-controller="actionevent">
-        <button class="btn btn-primary btn-sm" data-action="click->actionevent#increment">click</button>
-        <br>
-        <div> ==>
-            <span data-actionevent-target="eventtg">0</span>
-        </div>
-    </div>
-
-    <div data-controller="react-counter"></div>
+    {% include 'section1.html.twig' ignore missing %}
+    {% include 'section2.html.twig' with {'chart' : chart} %}
+    {% include 'section3.html.twig' ignore missing %}
 {% endblock %}

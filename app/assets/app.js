@@ -7,6 +7,16 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
-
+import './styles/bootstrap-icons.css';
 // start the Stimulus application
-import './bootstrap';
+import './stimulus';
+//load bootstrap
+require('bootstrap');
+// add global $ for jquery
+import $ from 'jquery';
+//load js
+require('./js/jquery.sticky.js');
+require('./js/click-scroll.js');
+require('./js/counter.js');
+require('./js/custom.js');
+
