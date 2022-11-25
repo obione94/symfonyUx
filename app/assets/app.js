@@ -15,6 +15,7 @@ require('bootstrap');
 // add global $ for jquery
 import $ from 'jquery';
 //load js
+
 require('./js/jquery.sticky.js');
 require('./js/click-scroll.js');
 require('./js/counter.js');
