@@ -1,0 +1,223 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BlackoutAdvisor{% endblock %}
+
+{% block body %}
+    <section class="news-detail-header-section text-center" >
+        <div class="section-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <h1 class="text-white">Les Eco Geste</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section section-padding section-bg" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                    <h2 class="mb-lg-3">Micro-trottoir : des astuces pour son budget</h2>
+                    <div id="testimonial-carousel" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Je choisis un lavage à 30 °C au lieu de 60 °C. C'est moins d'énergie dépensée</h4>
+                                    <small class="carousel-name"><span class="carousel-name-title">Maria</span>,
+                                        Boss</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Je met le chauffage à 18°C. Et si le froid se fait sentir au couché, mieux vaut ajouter une couverture</h4>
+                                    <small class="carousel-name"><span class="carousel-name-title">Thomas</span>,
+                                        Partner</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">Ma machine à lavé fonctionne toujours aux heures creuses, je la programmer pour 3 ou 4 heures du matin</h4>
+                                    <small class="carousel-name"><span class="carousel-name-title">Jane</span>,
+                                        Advisor</small>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h4 class="carousel-title">J'éteindre systhematiquement les lumières en sortant d’une pièce</h4>
+                                    <small class="carousel-name"><span class="carousel-name-title">Bob</span>,
+                                        Entreprenuer</small>
+                                </div>
+                            </div>
+
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#testimonial-carousel" data-bs-slide-to="0" class="active">
+                                    <img src="build/images/avatar/portrait-beautiful-young-woman-standing-grey-wall.jpg"
+                                         class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                </li>
+
+                                <li data-bs-target="#testimonial-carousel" data-bs-slide-to="1" class="">
+                                    <img src="build/images/avatar/portrait-young-redhead-bearded-male.jpg"
+                                         class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                </li>
+
+                                <li data-bs-target="#testimonial-carousel" data-bs-slide-to="2" class="">
+                                        <img src="build/images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
+                                         class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                </li>
+
+                                <li data-bs-target="#testimonial-carousel" data-bs-slide-to="3" class="">
+                                    <img src="build/images/avatar/studio-portrait-emotional-happy-funny.jpg"
+                                         class="img-fluid rounded-circle avatar-image" alt="avatar">
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section-padding section-bg" id="section_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-left mb-4">
+                    <h2 style="color: var(--secondary-color);font-size: var(--h2-font-size);letter-spacing: -2px;">
+                        Le saviez-vous:
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-12 text-left mb-4">
+                    <div class="custom-text-box">
+
+                        <h5 class="mb-3">Chauffage : pour un degré de moins, on économise jusqu’à 7 %</h5>
+                        <p>
+                            Chaque année, le chauffage représente un coût important qui impacte sérieusement le budget des familles. Pour réduire ces dépenses, il suffit parfois de baisser très légèrement le thermostat. En effet, on considère qu’un degré en moins permet déjà de réaliser 7% d’économies sur la facture. Alors, comment diminuer le poids du chauffage sans renoncer à son confort ? Voici quelques conseils utiles pour économiser et mieux protéger la planète.
+
+                        </p>
+                        <p>
+                            Il faut savoir que, sans considérer le chauffage, la cuisson ainsi que les autres usages de l’électricité, l’éclairage occupe 12 % dans la facture d’électricité. Beaucoup de consommateurs jugent que c’est le fait d’allumer et d’éteindre des ampoules telles que les modèles fluorescents qui augmente considérablement leur consommation d’énergie. D’où l’importance de ne pas laisser les lumières allumées en sortant d’une pièce.
+                        </p>
+                        <form class="custom-form subscribe-form f3"  role="form">
+                            <h5 class="mb-4">
+                                Testez notre simulateur de coût de l'énergie
+                            </h5>
+
+                            <div class="row">
+                                <div class="col-lg-2 col-12">
+                                    Nombre de degré baissé
+                                    <input type="number" name="nbr"  class="form-control" pattern="[1-9]*"  required="">
+                                </div>
+                                <div class="col-lg-4 col-12">
+                                    Cout de la facture d'électricité (période hivernal)
+                                    <input type="number" name="nbr"  class="form-control" pattern="[1-9]*"  required="">
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <button type="submit" class="form-control r3">Résultat</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-12 col-12 text-left mb-4">
+                                <strong>Economie de (en heure pleine)</strong> :<span class="counter-number-text p3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="section_2">
+                <div class="col-lg-12 col-12 text-left mb-4">
+                    <div class="custom-text-box">
+                        <h5 class="mb-3">Lancez votre machine à laver en heures creuses : pour quelles économies ?</h5>
+                        <p>
+                            Plus vous utiliserez votre machine à laver la nuit, plus vous ferez d'économies. Concrètement, un lave-linge (classe A+++) consomme environ 0,82 kWh en heures creuses, un classe A++ 0,87 kWh, un classe A+ 0,95 kWh et un classe A 1,33 kWh.
+                        </p>
+                        <p>
+                            Détartrez régulièrement votre appareil avec du vinaigre blanc, car une machine à laver bien entretenue est moins consommatrice d'énergie (un peu comme une voiture...). Une fois le lavage terminé, mettez la machine hors tension, et privilégiez un séchage à l'air libre, moins énergivore et plus écologique
+                        </p>
+                        <form class="custom-form subscribe-form f2"  role="form">
+                            <h5 class="mb-4">
+                                Testez notre simulateur de coût de l'énergie
+                            </h5>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-12">
+                                    Heure de consommation d'énergie
+                                    <input type="number" name="nbr"  class="form-control" pattern="[1-9]*"  required="">
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <button type="submit" class="form-control r2">Résultat</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-12 col-12 text-left mb-4">
+                                <strong>Classe A+++ (en heure pleine)</strong> :<span class="counter-number-text paaa"></span>
+                            </div>
+                            <div class="col-lg-12 col-12 text-left mb-4">
+                                <strong>Classe A (en heure pleine)</strong> :<span class="counter-number-text pa"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" id="section_3">
+                <div class="col-lg-12 col-12 text-left mb-4">
+                    <div class="custom-text-box">
+                        <h5 class="mb-3">Éteindre ou laisser allumer la lumière en sortant d’une pièce, économie énergétique et financière</h5>
+                        <p>
+                            Pour beaucoup d’entre nous, laisser allumer la lumière dans une pièce est sans importance. Détrompez-vous, c’est loin d’être le cas. En effet, en laissant allumer toute une journée ou une nuit, près de 3 ampoules de 75 watts par exemple, on revient à une consommation d’électricité d’un cycle de lessive à 60 °C. Ce qui n’est pas à prendre à la légère, car cette situation ne sera pas sans conséquence sur votre facture d’électricité.
+                        </p>
+                        <p>
+                            Il faut savoir que, sans considérer le chauffage, la cuisson ainsi que les autres usages de l’électricité, l’éclairage occupe 12 % dans la facture d’électricité. Beaucoup de consommateurs jugent que c’est le fait d’allumer et d’éteindre des ampoules telles que les modèles fluorescents qui augmente considérablement leur consommation d’énergie. D’où l’importance de ne pas laisser les lumières allumées en sortant d’une pièce.
+                        </p>
+                        <form class="custom-form subscribe-form f1"  role="form">
+                            <h5 class="mb-4">
+                                Testez notre simulateur de coût de l'énergie
+                            </h5>
+
+                            <div class="row">
+                                <div class="col-lg-3 col-12">
+                                    Nombre d'ampoule
+                                    <input type="number" name="nbr" id="nbr" class="form-control" pattern="[1-9]*" required="">
+                                </div>
+
+                                <div class="col-lg-3 col-12">
+                                    Heure de consommation d'énergie
+                                    <input type="number" name="heure" id="heure" class="form-control" pattern="[1-9]*"  required="">
+                                </div>
+
+                                <div class="col-lg-3 col-12">
+                                    Puissance en Watt
+                                    <select class="form-control" aria-label=".form-select-sm example" name="watt">
+                                        <option value="50">50 watt</option>
+                                        <option value="75">75 watt</option>
+                                        <option value="100">100 watt</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <button type="submit" class="form-control r1">Résultat</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-12 col-12 text-left mb-4">
+                                <strong>Heure pleine</strong> :<span class="counter-number-text p1hp"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-12 text-left mb-4">
+                                <strong> Heure creuse:</strong> :<span class="counter-number-text p1hc"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
