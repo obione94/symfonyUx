@@ -4,6 +4,6 @@
 
 {% block body %}
     {% include 'section1.html.twig' ignore missing %}
-    {% include 'section2.html.twig' with {'chart' : chart} %}
+    {% include 'section2.html.twig' with {'chart' : chart, 'chartCsv' : chartCsv} %}
     {% include 'section3.html.twig' ignore missing %}
 {% endblock %}

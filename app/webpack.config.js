@@ -17,7 +17,7 @@ Encore
     /*
      *copy zeub files images
     * */
-    .copyFiles({
+    .copyFiles([{
          from: './assets/images',
 
          // optional target path, relative to the output dir
@@ -28,7 +28,20 @@ Encore
 
          // only copy files matching this pattern
          pattern: /\.(png|jpg|jpeg)$/
-     })
+     },
+     {
+         from: './assets/csv',
+
+         // optional target path, relative to the output dir
+         to: 'csv/[path][name].[ext]',
+
+         // if versioning is enabled, add the file hash too
+         //to: 'images/[path][name].[hash:8].[ext]',
+
+         // only copy files matching this pattern
+         pattern: /\.(csv)$/
+     }])
+    
 
     /*
      * ENTRY CONFIG

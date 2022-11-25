@@ -13,7 +13,7 @@
                 }}
             </div>
             <div class="col-lg-6 col-12">
-                {{ render_chart(chart, {
+                {{ render_chart(chartCsv, {
                     'data-controller': 'admin-chartjs',
                     'data-action': 'chartjs:connect->admin-chartjs#onChartConnect'
                     }) 
@@ -34,7 +34,7 @@
                             <div class="custom-block-body">
                                 <h5 class="mb-3">Eteindre vos Lumières</h5>
 
-                                <p>L’importance d’un geste tel que le fait d’éteindre la lumière en sortant d’une pièce est bien prouvée. Ce bon réflexe permettant d’éviter le gaspillage énergétique. Vous permettrez ainsi à d’autres consommateurs de recevoir de l’électricité comme il se doit.</p>
+                                <p>L’importance d’un geste tel que le fait d’éteindre la lumière en sortant d’une pièce est bien prouvée. Ce bon réflexe évite le gaspillage énergétique. Vous permettrez ainsi à d’autres consommateurs de recevoir de l’électricité comme il se doit.</p>
 
                                 <div class="progress mt-4">
                                     <div class="progress-bar w-50" role="progressbar" aria-valuenow="50"
@@ -43,8 +43,8 @@
 
                                 <div class="d-flex align-items-center my-2">
                                     <p class="mb-0">
-                                        <strong>l’éclairage occupe:</strong>
-                                        12 % 
+                                        <strong>l’éclairage:</strong>
+                                        12 % de la consommation électrique
                                     </p>
                                 </div>
                             </div>
